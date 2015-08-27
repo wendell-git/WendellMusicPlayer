@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+            <ImageView 
+			    android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/main_bg"/>
+            <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:orientation="horizontal"
+	            android:layout_margin="10dp" >
+	            <com.app.widget.CategoryItemView
+	                android:layout_width="0dp"
+	                android:layout_weight="1"
+	                android:layout_height="wrap_content"
+	                android:layout_marginRight="10dp"/>
+	            <com.app.widget.CategoryItemView
+	                android:layout_width="0dp"
+	                android:layout_weight="1"
+	                android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:orientation="horizontal" 
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+	            android:layout_marginBottom="10dp">
+	            <com.app.widget.CategoryItemView
+	                android:layout_width="0dp"
+	                android:layout_weight="1"
+	                android:layout_height="wrap_content"
+	            	android:layout_marginRight="10dp"/>
+	            <com.app.widget.CategoryItemView
+	                android:layout_width="0dp"
+	                android:layout_weight="1"
+	                android:layout_height="wrap_content"/>
+            </LinearLayout>
+		    <ProgressBar
+		        android:id="@+id/fragment_mainTab_item_progressBar"
+		        style="?android:attr/progressBarStyleLarge"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center" />
+		
+		    <TextView
+		        android:id="@+id/fragment_mainTab_item_textView"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:text="加载完毕"
+		        android:visibility="gone" />
+            
+        </LinearLayout>
+    </ScrollView>
+    
+	
+
+    
+
+</FrameLayout>

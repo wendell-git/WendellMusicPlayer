@@ -1,4 +1,4 @@
-package com.example.myuiframe;
+package com.app.myuiframe;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -20,6 +20,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
+import com.app.myuiframe.R;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 import com.shizhefei.view.indicator.FragmentListPageAdapter;
 import com.shizhefei.view.indicator.IndicatorViewPager;
@@ -47,7 +48,7 @@ public class MainActivity extends FragmentActivity {
 		
 		ViewPager viewPager = (ViewPager) findViewById(R.id.moretab_viewPager);
 		indicator = (ScrollIndicatorView) findViewById(R.id.moretab_indicator);
-		indicator.setScrollBar(new ColorBar(this, Color.RED, 5));
+		indicator.setScrollBar(new ColorBar(this, Color.WHITE, 5));
 
 		// 设置滚动监听
 		int selectColorId = R.color.tab_top_text_2;
@@ -132,6 +133,7 @@ public class MainActivity extends FragmentActivity {
 			}
 			TextView textView = (TextView) convertView;
 			textView.setText(names[position % names.length]);
+			textView.setTextSize(18);//设定文字大小
 			textView.setPadding(20, 0, 20, 0);
 			return convertView;
 		}

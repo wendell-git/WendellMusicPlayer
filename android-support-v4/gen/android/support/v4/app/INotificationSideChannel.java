@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: D:\\GITHUB_FILE\\ViewPagerIndicator-master\\android-support-v4\\src\\android\\support\\v4\\app\\INotificationSideChannel.aidl
+ * Original file: D:\\GITHUB_FILE\\WendellMusicPlayer\\android-support-v4\\src\\android\\support\\v4\\app\\INotificationSideChannel.aidl
  */
 package android.support.v4.app;
 /**

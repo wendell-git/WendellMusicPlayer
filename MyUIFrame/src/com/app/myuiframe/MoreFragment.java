@@ -1,4 +1,4 @@
-package com.example.myuiframe;
+package com.app.myuiframe;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.app.myuiframe.R;
 import com.shizhefei.fragment.LazyFragment;
 
 public class MoreFragment extends LazyFragment {
@@ -17,7 +18,7 @@ public class MoreFragment extends LazyFragment {
 	@Override
 	protected void onCreateViewLazy(Bundle savedInstanceState) {
 		super.onCreateViewLazy(savedInstanceState);
-		setContentView(R.layout.fragment_tabmain_item);
+		setContentView(R.layout.fragment_main_item);
 		tabIndex = getArguments().getInt(INTENT_INT_INDEX);
 		progressBar = (ProgressBar) findViewById(R.id.fragment_mainTab_item_progressBar);
 		textView = (TextView) findViewById(R.id.fragment_mainTab_item_textView);

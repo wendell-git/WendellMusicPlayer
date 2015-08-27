@@ -1,7 +1,9 @@
-package com.example.myuiframe;
+package com.app.myuiframe;
 
 import java.util.Arrays;
 import java.util.List;
+
+import com.app.myuiframe.R;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
